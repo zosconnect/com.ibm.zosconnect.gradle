@@ -1,0 +1,13 @@
+plugins {
+    id 'com.ibm.zosconnect.gradle'
+}
+
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+}
+
+zosConnectApi {
+    archiveFileName = "changed.war"
+    archiveVersion = "1.0"
+}

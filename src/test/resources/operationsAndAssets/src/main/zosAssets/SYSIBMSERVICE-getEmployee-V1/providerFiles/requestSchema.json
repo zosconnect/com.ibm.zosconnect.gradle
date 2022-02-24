@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "type" : "object",
+  "properties" : {
+    "body" : {
+      "type" : "object",
+      "properties" : {
+        "EMPNO" : {
+          "type" : [ "null", "string" ],
+          "maxLength" : 6,
+          "description" : "Nullable CHAR(6)"
+        }
+      },
+      "required" : [ "EMPNO" ],
+      "description" : "Service getEmployee invocation HTTP request body"
+    }
+  },
+  "required" : [ "body" ],
+  "description" : "General wrapper for Db2 z/OS Asset requests"
+}

@@ -1,0 +1,10 @@
+---
+version: 1.0
+type: "db2-1.0"
+description: "Gets the details of an individual employee."
+providerProperties:
+  description: "Gets the details of an individual employee."
+  serviceName: "getEmployee"
+  collectionId: "SYSIBMSERVICE"
+  version: "V1"
+  connectionRef: "db2Conn"

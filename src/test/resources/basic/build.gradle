@@ -1,0 +1,8 @@
+plugins {
+    id 'com.ibm.zosconnect.gradle'
+}
+
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+}

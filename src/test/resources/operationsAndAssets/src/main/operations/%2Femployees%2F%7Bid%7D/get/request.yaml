@@ -1,0 +1,6 @@
+---
+mappings:
+- body:
+    mappings:
+    - EMPNO:
+        template: "{{$pathParameters.id}}"

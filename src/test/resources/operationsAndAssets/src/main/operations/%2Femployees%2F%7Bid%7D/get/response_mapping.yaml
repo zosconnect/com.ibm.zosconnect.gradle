@@ -1,0 +1,18 @@
+---
+version: 1
+response_200.yaml:
+  condition: "($count($zosAssetResponse.body.\"ResultSet Output\" ) = 1) and ($zosAssetResponse.body.StatusCode\
+    \ = 200)"
+  httpStatusCode: 200
+response_201.yaml:
+  condition: "$zosAssetResponse.body.StatusCode = 201"
+  httpStatusCode: 201
+response_202.yaml:
+  condition: "$zosAssetResponse.body.StatusCode = 202"
+  httpStatusCode: 202
+response_404.yaml:
+  condition: "$count($zosAssetResponse.body.\"ResultSet Output\") = 0"
+  httpStatusCode: 404
+response_500.yaml:
+  condition: true
+  httpStatusCode: 500

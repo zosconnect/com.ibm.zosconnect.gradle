@@ -1,0 +1,33 @@
+---
+mappings:
+- body:
+    mappings:
+    - employeeNumber:
+        template: "{{$zosAssetResponse.body.\"ResultSet Output\".EMPNO}}"
+    - firstName:
+        template: "{{$zosAssetResponse.body.\"ResultSet Output\".FIRSTNME}}"
+    - lastName:
+        template: "{{$zosAssetResponse.body.\"ResultSet Output\".LASTNAME}}"
+    - middleInitial:
+        template: "{{$zosAssetResponse.body.\"ResultSet Output\".MIDINIT}}"
+    - department:
+        template: "{{$zosAssetResponse.body.\"ResultSet Output\".WORKDEPT}}"
+    - phoneNumber:
+        template: "{{$zosAssetResponse.body.\"ResultSet Output\".PHONENO}}"
+    - hireDate:
+        template: "{{$zosAssetResponse.body.\"ResultSet Output\".HIREDATE}}"
+    - job:
+        template: "{{$zosAssetResponse.body.\"ResultSet Output\".JOB}}"
+    - educationLevel:
+        expression: "$zosAssetResponse.body.\"ResultSet Output\".EDLEVEL"
+    - sex:
+        template: "{{$zosAssetResponse.body.\"ResultSet Output\".SEX}}"
+    - dateOfBirth:
+        template: "{{$zosAssetResponse.body.\"ResultSet Output\".BIRTHDATE}}"
+    - salary:
+        expression: "$zosAssetResponse.body.\"ResultSet Output\".SALARY"
+    - bonus:
+        expression: "$zosAssetResponse.body.\"ResultSet Output\".BONUS"
+    - commission:
+        expression: "$zosAssetResponse.body.\"ResultSet Output\".COMM"
+version: 1

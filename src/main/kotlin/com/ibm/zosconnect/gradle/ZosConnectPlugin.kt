@@ -71,7 +71,7 @@ open class ZosConnectPlugin : Plugin<Project> {
             dependencies.add("providedCompile", "javax.annotation:javax.annotation-api:1.3.2")
             dependencies.add("providedCompile", "javax.servlet:servlet-api:2.5")
             dependencies.add("providedCompile", "org.eclipse.microprofile:microprofile:4.1")
-            dependencies.add("providedCompile", "com.ibm.zosconnect:com.ibm.zosconnect.project.spi.jar:1.0.1-beta")
+            dependencies.add("providedCompile", "com.ibm.zosconnect:com.ibm.zosconnect.project.spi.jar:1.0.0")
 
             // Set java config
             val convention = convention.plugins[JAVA] as JavaPluginConvention

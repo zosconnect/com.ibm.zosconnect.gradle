@@ -30,7 +30,7 @@ val ossrhUsername: String? by project
 val ossrhPassword: String? by project
 
 group = "com.ibm.zosconnect"
-version = "1.0.0-local-SNAPSHOT"
+version = "1.0.0"
 
 dependencies {
     testImplementation("com.github.spotbugs:spotbugs-annotations:3.1.3")
@@ -66,7 +66,7 @@ publishing {
             pom {
                 name.set("IBM z/OS Connect Gradle Plugin")
                 description.set("Plugin to be used in z/OS Connect API projects")
-                url.set("https://www.ibm.com/docs/en/zosconnect/beta")
+                url.set("https://github.com/zosconnect/com.ibm.zosconnect.gradle")
                 licenses {
                     license {
                         name.set("Eclipse Public License, Version 2.0")
@@ -92,7 +92,7 @@ publishing {
                     }
                 }
                 scm {
-                    url.set("https://www.ibm.com/docs/en/zosconnect/beta")
+                    url.set("https://github.com/zosconnect/com.ibm.zosconnect.gradle")
                 }
             }
         }

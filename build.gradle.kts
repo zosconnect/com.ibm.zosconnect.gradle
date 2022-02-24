@@ -30,7 +30,7 @@ val ossrhUsername: String? by project
 val ossrhPassword: String? by project
 
 group = "com.ibm.zosconnect"
-version = "1.0.0-local-SNAPSHOT"
+version = "1.0.0"
 
 dependencies {
     testImplementation("com.github.spotbugs:spotbugs-annotations:3.1.3")

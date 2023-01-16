@@ -1,22 +1,5 @@
-# IBM z/OS Connect Gradle Plugin
-## Overview
-This plugin is used within the z/OS Connect Designer `build.gradle` file and is used to build a war file.
+# IBM z/OS Connect Gradle Plugin (com.ibm.zosconnect.gradle)
 
-## How To Configure
+This repository is now archived. Future versions of this plugin are maintained as closed source by IBM.
 
-Add the plugin to your `build.gradle` file.
-
-```
-plugins {
-    id 'com.ibm.zosconnect.gradle'
-}
-```
-
-This plugin can be configured using a DSL block within the `build.gradle` file, both `archiveFileName` and `archiveVersion` are configurable.
-
-```
-zosConnectApi {
-    archiveFileName = "customFileName.war"
-    archiveVersion = "1.0"
-}
-```
+The plugin is available for download on [Maven Central](https://mvnrepository.com/artifact/com.ibm.zosconnect/com.ibm.zosconnect.gradle/).
